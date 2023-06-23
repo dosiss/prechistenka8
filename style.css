@@ -52,7 +52,7 @@ body {
   height: 100vh;
 
   font-family: '20kopeek', sans-serif;
-  /* background: #E03D3D; */
+  background: #E03D3D;
   position: relative;
   letter-spacing: .8px;
   box-sizing: border-box;
@@ -621,7 +621,11 @@ margin-top: 50px
       cursor: pointer;
     }
 
-
+@media (max-width: 1440px) {
+  .agents-content {
+    margin-top: 25px
+  }
+}
 @media (max-width: 1020px) {
   .modal-container {
     width: 80%
@@ -680,6 +684,9 @@ margin-top: 50px
   .bottom-group__name svg {
     height: 19px;
     width: auto;
+  }
+  #agents .wa-icon.mobile .btn-link {
+    display: none
   }
 }
 @media (max-device-width: 1180px) and (orientation: landscape) {
@@ -751,7 +758,7 @@ margin-top: 50px
       font-size: 1.5rem
     }
     #agents .center__wrap {
-      padding: 30px
+      padding: 15px 30px
     }
     .agents-content {
       flex-direction: column;
@@ -770,6 +777,9 @@ margin-top: 50px
       z-index: -1;
       right: -20px;
     }
+    .contacts {
+      margin-top: 20px
+    }
     #agents .center-title:before {
       top: -18px;
           right: -23px;
@@ -784,6 +794,9 @@ margin-top: 50px
     }
     #redbtn .btn {
       width: 100%
+    }
+    #agents .btn.btn-filled {
+      margin-top: 20px
     }
 
 }
