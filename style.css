@@ -309,33 +309,40 @@ align-items: center;
     overflow-x: hidden;
   }
   .hidden {
-  display: none !important;
+ display: none !important;
+/* height: 0;
+overflow: hidden;
+padding: 0 !important */
 }
 .shown {
   display: flex !important
+/* height: auto; */
 
 }
 .contacts {
   display: flex;
   justify-content: space-between;
   margin-top: 60px;
-  transition: all 1s ease-in
+  /* transition: all 1s ease-in */
 }
 #redbtn {
-  transition: all 2s ease-in
+/*  transition: all 2s ease-in */
 }
 
 .contacts .btn {
   display: flex;
   align-items: center;
-  padding: 12px 20px
+  padding: 12px 20px;
+  background-color: #ffffff;
+
 }
 .contacts .btn svg {
   width: 20px;
   height: 20px
 }
 .contacts .btn span {
-  margin-left: 10px
+  margin-left: 10px;
+    color: #1c1c1c
 }
 
   a {
@@ -377,15 +384,21 @@ align-items: center;
   #agents .agent-btn svg {
     width: 25px;
     height: auto;
-    margin-top: 3px
   }
   #agents .top-logo {
     display: none
   }
   #agents .agent-btn .button-filled {
-    background: #E03D3D;
+    background: #fff;
     color: #1c1c1c;
     cursor: pointer;
+    display: flex;
+align-items: center;
+justify-content: center;
+  }
+  #agents .agent-btn span {
+    color: #1c1c1c;
+margin-left: 12px;
   }
   #agents .agent-btn .btn {
     border: 0
