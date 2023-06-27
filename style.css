@@ -47,7 +47,7 @@
   padding: 0px;
 }
 
-body {
+#body {
   width: 100vw;
   height: 100vh;
 
@@ -295,7 +295,9 @@ align-items: center;
     font-weight: bold;
     cursor: pointer;
   }
-
+  #agents-page {
+    background: #1c1c1c
+  }
   #agents {
     width: 100vw;
     height: 100vh;
@@ -443,6 +445,7 @@ margin: 0 auto;
   }
   #agents .center-title {
     position: relative;
+    text-align: center;
   }
   #agents .center-title:before {
     position: absolute;
@@ -512,13 +515,14 @@ margin-top: 50px
     width: 700px;
     height: 520px;
     bottom: -120px;
-    z-index: -1;
+    z-index: 0;
     right: -226px;
   }
   #agents .btn.btn-filled {
     background: #E03D3D;
     border: 0;
-    margin-top: 60px
+    margin-top: 60px;
+    position: relative;
   }
   .center-group {
     display: flex;
@@ -643,7 +647,7 @@ margin-top: 50px
 
 @media (max-width: 1440px) {
   .agents-content {
-    margin-top: 25px
+    margin-top: 15px
   }
 }
 @media (max-width: 1020px) {
@@ -710,7 +714,7 @@ margin-top: 50px
   }
 }
 @media (max-device-width: 1180px) and (orientation: landscape) {
-  body {
+  #body {
     height: 100svh;
     }
   .canvasWrapper {
@@ -726,7 +730,7 @@ margin-top: 50px
   #agents .top__wrap {
     padding: 0
   }
-  body {
+  #body {
     height: 100svh;
     }
   .canvasWrapper {
@@ -782,13 +786,19 @@ margin-top: 50px
       font-size: 1.5rem
     }
     #agents .center__wrap {
-      padding: 15px 30px
+      padding: 30px 30px 15px
+    }
+    #agents .center-title img {
+      max-width: 93%
     }
     .agents-content {
       flex-direction: column;
     }
     .content-left, .content-right {
       flex-basis: 100%
+    }
+    .content-right {
+      margin-top: 10px
     }
     .content-right:before {
       position: absolute;
@@ -813,7 +823,7 @@ margin-top: 50px
     #agents .center-title:after {
       width: 133px;
       height: 115px;
-      bottom: -81px;
+      bottom: -67px;
       left: 92px;
     }
     #redbtn .btn {
